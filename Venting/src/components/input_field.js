@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Util from '../util';
 
 class InputField extends Component {
 
@@ -30,7 +31,7 @@ class InputField extends Component {
       <ul className="sentence-list">
         {this.state.sentences.map( (sentence, index) => (
           <li key={index} className="sentence-list-item">
-            {sentence}
+            {Util.emotionize(sentence)}
           </li>
         ))}
       </ul>
