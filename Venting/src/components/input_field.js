@@ -14,10 +14,10 @@ class InputField extends Component {
   handleEnter(event) {
     if (event.charCode === 13) {
       this.state.sentences.push(this.state.statement);
+      this.setState({ statement: '' });
       console.log(this.state.sentences);
     }
   }
-
 
   render() {
     return (
@@ -28,6 +28,13 @@ class InputField extends Component {
           onKeyPress={ event => this.handleEnter(event) }
         />
       <p>{this.state.statement}</p>
+      {this.state.sentences.map( (sentence, index) => {
+          return (
+            <li key={index}>
+              {sentence}
+            </li>
+          );
+      })}
      </div>
     );
   }
