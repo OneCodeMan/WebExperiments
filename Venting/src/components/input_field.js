@@ -28,13 +28,15 @@ class InputField extends Component {
           onKeyPress={ event => this.handleEnter(event) }
         />
       <p>{this.state.statement}</p>
-      {this.state.sentences.map( (sentence, index) => {
-          return (
-            <li key={index}>
-              {sentence}
-            </li>
-          );
-      })}
+      <ul className="sentence-list">
+        {this.state.sentences.map( (sentence, index) => {
+            return (
+              <li key={index} className="sentence-list-item">
+                {sentence}
+              </li>
+            );
+        })}
+      </ul>
      </div>
     );
   }
