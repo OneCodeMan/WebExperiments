@@ -13,9 +13,8 @@ class InputField extends Component {
 
   handleEnter(event) {
     if (event.charCode === 13) {
-      this.state.sentences.push(this.state.statement);
+      this.state.sentences.unshift(this.state.statement);
       this.setState({ statement: '' });
-      console.log(this.state.sentences);
     }
   }
 
