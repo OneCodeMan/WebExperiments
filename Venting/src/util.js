@@ -1,19 +1,23 @@
+import React from 'react';
+
 const EMOTIONS = {
   'angry': 'angry',
   'sad': 'sad',
   'hungry': 'hungry',
   'tired': 'tired',
   'sleepy': 'sleepy',
+  'happy': 'happy',
+  'excited': 'excited',
 };
 
 const emotionize = sentence => {
-  // split sentence at ':' into array
   let s = sentence.split(':');
-  // store first half of array into a variable mood
-  let mood = s[0];
-  return mood;
-  // determine what the first half of mood is
-  // style accordingly, return a list item or something
+  let mood = s.length == 1 ? '' : s[0];
+  let literalSentence = s.length == 1 ? s[0] : s[1];
+
+  return (
+    <p className={mood}>{literalSentence}</p>
+  );
 };
 
 export default {

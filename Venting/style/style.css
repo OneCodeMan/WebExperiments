@@ -1,3 +1,7 @@
 .sentence-list {
   list-style-type: none;
 }
+
+.angry {
+  color: red;
+}
