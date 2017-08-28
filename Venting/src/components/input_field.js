@@ -28,13 +28,11 @@ class InputField extends Component {
         />
       <p>{this.state.statement}</p>
       <ul className="sentence-list">
-        {this.state.sentences.map( (sentence, index) => {
-            return (
-              <li key={index} className="sentence-list-item">
-                {sentence}
-              </li>
-            );
-        })}
+        {this.state.sentences.map( (sentence, index) => (
+          <li key={index} className="sentence-list-item">
+            {sentence}
+          </li>
+        ))}
       </ul>
      </div>
     );
