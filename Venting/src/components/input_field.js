@@ -6,8 +6,16 @@ class InputField extends Component {
     super(props);
 
     this.state = {
-      statement: ''
+      statement: '',
+      sentences: []
     };
+  }
+
+  handleEnter(event) {
+    if (event.charCode === 13) {
+      this.state.sentences.push(this.state.statement);
+      console.log(this.state.sentences);
+    }
   }
 
 
@@ -15,8 +23,11 @@ class InputField extends Component {
     return (
       <div>
         <input
-          onChange={event => this.setState({ statement: event.target.value }) }
+          value={this.state.statement}
+          onChange={ event => this.setState({ statement: event.target.value }) }
+          onKeyPress={ event => this.handleEnter(event) }
         />
+      <p>{this.state.statement}</p>
      </div>
     );
   }

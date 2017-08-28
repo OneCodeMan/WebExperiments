@@ -7,9 +7,6 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      statements: ['d', 'sdsa'],
-    };
   }
 
   render() {
