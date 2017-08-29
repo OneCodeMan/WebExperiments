@@ -8,7 +8,7 @@ class InputField extends Component {
 
     this.state = {
       statement: '',
-      sentences: []
+      sentences: [],
     };
   }
 
@@ -19,6 +19,10 @@ class InputField extends Component {
     }
   }
 
+clearSentences() {
+  this.setState({ sentences: [] });
+}
+
   render() {
     return (
       <div>
@@ -27,6 +31,11 @@ class InputField extends Component {
           onChange={ event => this.setState({ statement: event.target.value }) }
           onKeyPress={ event => this.handleEnter(event) }
         />
+      <button
+        className="clear-btn"
+        onClick={e => this.clearSentences()}>
+        START OVER
+      </button>
       <p>{this.state.statement}</p>
       <ul className="sentence-list">
         {this.state.sentences.map( (sentence, index) => (

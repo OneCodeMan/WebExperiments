@@ -8,7 +8,9 @@ const emotionize = sentence => {
   let literalSentence = s.length == 1 ? s[0] : s[1];
 
   return (
-    <p className={mood}>{literalSentence}</p>
+    <p className={mood}>
+      {literalSentence}
+    </p>
   );
 };
 
