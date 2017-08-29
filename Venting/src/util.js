@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EMOTIONS = ['angry', 'sad', 'hungry', 'tired', 'sleepy', 'happy', 'excited'];
+const EMOTIONS = ['angry', 'sad', 'hungry', 'tired', 'sleepy', 'happy', 'excited', 'stressed'];
 
 const emotionize = sentence => {
   let s = sentence.split(':');

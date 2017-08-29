@@ -17,6 +17,7 @@ const Intro = () => {
             <li className="emotion-example">sleepy:</li>
             <li className="emotion-example">happy:</li>
             <li className="emotion-example">excited:</li>
+            <li className="emotion-example">stressed:</li>
           </ul>
 
           Example -> <span className="emotion-example">angry: i am really angry with myself</span>

@@ -66,3 +66,9 @@ input {
   font-size: 30px;
   font-weight: bold;
 }
+
+.stressed {
+  font-style: oblique;
+  color: #394648;
+  font-size: 30px;
+}
