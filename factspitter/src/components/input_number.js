@@ -5,18 +5,25 @@ class InputNumber extends Component {
     super(props);
 
     this.state = {
-      'number': 0,
-      'count': 1,
+      'number': this.props.number,
     };
 
+  }
+
+  onNumberChange(number) {
+    this.setState({number});
+    this.props.onInputNumberChange(number);
   }
 
   render() {
     return (
       <div>
-        <input />
-        <input />
-        <button>Go</button>
+        <input
+          value={this.state.number}
+          onChange={ event => this.onNumberChange(event.target.value) }
+          type="number"
+          name="num"
+        />
       </div>
     );
   }
