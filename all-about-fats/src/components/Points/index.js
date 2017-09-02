@@ -2,7 +2,6 @@ import React from 'react';
 
 const Points = ({points}) => (
 
-  <div>
     <ul>
       {points.map((point, i) => {
         return (
@@ -13,7 +12,6 @@ const Points = ({points}) => (
       })}
 
     </ul>
-  </div>
 
 );
 
