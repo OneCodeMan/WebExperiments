@@ -1,0 +1,80 @@
+{
+
+  "fats": [
+
+    {
+      "main_title": "Saturated fats",
+      "notes": ["Composed of chains made up of single bonds.", "A straight and ordered orientation, packed tightly.", "Solid at room temperature"],
+      "types": [
+        {
+          "title": "Lauric Acid",
+          "quality": "Good",
+          "points": ["Coconut oil", "Body doesn't change MCTs into body fat as easily, so it makes it less likely for MCTs to be stored in body and more likely to be burned for energy.", "Increases total cholesterol levels, increasing HDL (high-density lipoprotein), the good cholesterol."]
+        },
+        {
+          "title": "Stearic Acid",
+          "quality": "Good",
+          "points": ["Milk, butter", "Long-chain saturated fat.", "Digestion-slowing properties. Keeps you fuller longer and flattens belly.", "Regulates performance of mitochondria (which is the energy-producing powerhouse of the cell)", "Lowers LDL cholesterol and inflammation in comparison to other fats."]
+        },
+        {
+          "title": "Palmitic Acid",
+          "quality": "Bad",
+          "points": ["Palm oil, conventionally raised animal fats", "Excess carbs are converted into palmitic acid.", "Increases LDL (low-density lipoprotein)"]
+        }
+      ]
+    },
+
+    {
+      "main_title": "Monounsatured fats",
+      "notes": ["Composed of chains with a single double bond.", "Can't pack as tightly together.", "Liquid at room temperature", "Cis formation. Chain before the double bound and after are on the same side."],
+      "types": [
+        {
+          "title": "Omega-9s / Oleic acid",
+          "quality": "Good",
+          "points": ["Olive oil, walnuts, avocadoes", "Can reduce appetite and promote weight loss", "Raises HDL without raising LDL"]
+        }
+      ]
+    },
+
+    {
+        "main_title": "Polyunsatured fats",
+        "notes": ["Pretty complicated tbh", "Essential fatty acids, we need them to thrive, but we can only get them by eating it.", "Made up of chains with two or more double bonds.", "Hard to pack together.", "Split between Omega-3 and Omega-6"],
+        "types": [
+          {
+            "title": "Omega-3 fatty acids",
+            "quality": "Good",
+            "points": ["3 are essential to humans", "ALA (alpha-linolenic acid), DHA (docosahexaenoic), EPA (eicosapentaenoic acid)", "Reducing inflammation, cholesterol levels, body fat, and hunger."]
+          },
+          {
+            "title": "Omega-6 fatty acids",
+            "quality": "Good",
+            "points": ["Too much of Linoleic acid can lead to inflammation, overeating, weight gain, and heart disease.", "Arachidonic acid increases lean body mass, strength, and anaerobic power."]
+          }
+        ]
+    },
+
+    {
+      "main_title": "Trans Fats",
+      "notes": ["Trans orientation. Two different directions at the kink of the double bond.", "Conjugated or nonconjugated."],
+      "types": [
+        {
+          "title": "Conjugated Linoleic Acid",
+          "quality": "Good",
+          "points": ["Grass-fed beef, grass-fed dairy, turkey, lamb, veal", "Produced in guts of cows, turkeys, and lamb.", "Powerful antioxidant."]
+        },
+        {
+          "title": "Partially Hydrogenated Oils",
+          "quality": "Really really bad",
+          "points": ["Fried foods, baked foods, margarine", "Partially hydrogenating means to inject vegetable oil with hydrogen.", "It turns oil solid even at room temperature when you do that.", "They also turn solid when inside your body. Jamming up arteries, even the ones in your brain.", "Increases risk of heart disease (increasing LDL and decreasing HDL), weight gain, diminishing memory"]
+        },
+        {
+          "title": "Vaccenic Acid",
+          "quality": "Bad",
+          "points": ["Grass-fed beef, grass-fed dairy, turkey, lamb, veal"]
+        }
+      ]
+    }
+
+  ]
+
+}
