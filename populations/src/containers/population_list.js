@@ -9,19 +9,27 @@ class PopulationList extends Component {
     const populationCount = populationData.total_population[0].population;
 
     return (
-      <div key={populationCount}>
-      {date}<br />
-      {populationCount}
-      </div>
+      <tr key={populationCount}>
+      <td>{date}</td>
+      <td>{populationCount}</td>
+      </tr>
     );
 
   }
 
   render() {
     return (
-      <div>
-        {this.props.population.map(this.renderPopulation)}
-      </div>
+      <table className="table table-hover">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Population</th>
+          </tr>
+        </thead>
+        <tbody>
+          {this.props.population.map(this.renderPopulation)}
+        </tbody>
+      </table>
     );
   }
 }
