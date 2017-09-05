@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRoute, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+
+import Fasting from './components/Fasting';
+import Vitamins from './components/Vitamins';
+import Spirulina from './components/Spirulina';
 
 class App extends Component {
   render() {
