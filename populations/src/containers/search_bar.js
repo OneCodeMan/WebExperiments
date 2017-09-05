@@ -22,6 +22,7 @@ class SearchBar extends Component {
     event.preventDefault();
 
     this.props.fetchPopulation(this.state.term);
+    console.log('term: ', this.state.term);
     this.setState({ term: '' });
   }
 

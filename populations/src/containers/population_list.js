@@ -5,11 +5,13 @@ import { connect } from 'react-redux';
 class PopulationList extends Component {
 
   renderPopulation(populationData) {
-    console.log('Population Data: ', populationData);
-    const pop = populationData;
+    const date = populationData.total_population[0].date;
+    const populationCount = populationData.total_population[0].population;
+
     return (
-      <div>
-        <p>{pop.total_population[0].date}</p>
+      <div key={populationCount}>
+      {date}<br />
+      {populationCount}
       </div>
     );
 
