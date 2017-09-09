@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 100px;
+  font-family: 'Bitter', serif;
+  letter-spacing: 2px;
+  color: #FFFCF9;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .box {
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.colorful {
+  background: linear-gradient(to right, #83E8BA, #FF6978, #016FB9, #9792E3);
+  background-size: 2500%;
+  animation: 10s ease-in-out infinite alternate switchGradient;
+}
+
+@keyframes switchGradient {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
